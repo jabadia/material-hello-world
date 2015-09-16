@@ -1,7 +1,7 @@
 (function(){
     "use strict";
 
-    var app = angular.module('HelloWorldApp',['ngMaterial']);
+    var app = angular.module('HelloWorldApp',['ngMaterial','ngMdIcons']);
 
     app.config(function($mdThemingProvider)
     {
