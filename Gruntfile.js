@@ -74,6 +74,7 @@ module.exports = function(grunt) {
             vendor_css: {
                 src: [
                     'bower_components/angular-material/angular-material.min.css',
+                    'bower_components/angular-material-icons/angular-material-icons.css',
                     // 'bower_components/leaflet1.0b/leaflet.css',
                     // 'bower_components/leaflet/dist/leaflet.css',
                 ],
