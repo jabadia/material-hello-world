@@ -63,6 +63,7 @@
                 <md-tabs md-stretch-tabs="always" md-selected="data.selectedIndex">
                     <md-tab id="tab1" aria-controls="tab1-content">Latest</md-tab>
                     <md-tab id="tab2" aria-controls="tab2-content">Favorites</md-tab>
+                    <md-tab id="tab3" aria-controls="tab3-content">Friends</md-tab>
                 </md-tabs>
             </md-toolbar>
 
@@ -162,7 +163,20 @@
                                         </md-list>
                                 </md-card>
                             </div>                        
-                        </div>                
+                        </div>
+                        <div role="tabpanel" id="tab3-content" aria-labelledby="tab3"
+                            ng-switch-when="2"
+                            md-swipe-left="next()"
+                            md-swipe-right="previous()"
+                            layout="row" layout-align="center center">
+                            <div flex-gt-sm="90" flex-gt-md="80">
+                                <h2 class="md-title inset">Friends</h2>
+                                <md-card>
+                                    <md-list>
+                                    </md-list>
+                                </md-card>
+                            </div>
+                        </div>
                     </ng-switch>            
                 </ui-view>
             </md-content>
